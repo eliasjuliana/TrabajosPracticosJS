@@ -2,5 +2,5 @@
 
 let text = prompt('Ingrese un texto');
 
-text = text.toUpperCase;
+text = text.toUpperCase();
 console.log (text);
