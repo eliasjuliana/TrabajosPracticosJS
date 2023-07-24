@@ -9,7 +9,6 @@ let textoReverseUnido = textoReverse.join('');
 console.log(textoReverseUnido);
 
 
-
 //________con bucle_______
 
 // let text = prompt('Ingrese un texto');
