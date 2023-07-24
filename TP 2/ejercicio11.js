@@ -22,4 +22,4 @@ if (Math.max(edad1, edad2, edad3) === edad1) {
     console.log(`El mayor es ${nombre3}`);
 }
 
-//no incluyo los casos en que dos o las tres edades sean iguales
+//no incluyo los casos en que dos o las tres edades sean iguales.
