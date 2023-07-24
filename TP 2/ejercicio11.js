@@ -1,5 +1,4 @@
 // 11- Realiza un script que pida por teclado 3 edades y 3 nombres e indique el nombre del mayor. *
-
 let nombre1 = prompt("Ingrese su nombre");
 let edad1 = prompt('Ingrese su edad');
 
