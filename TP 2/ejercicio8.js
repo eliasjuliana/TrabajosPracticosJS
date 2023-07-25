@@ -11,13 +11,14 @@
 let number;
 number = prompt('Ingrese un numero');
 
-if (number <= 50) {
+if (isNaN(number)){
+     console.log('El valor ingresado no es un numero valido'); 
+} else if (Number(number) <= 50) {
     let j = "";
     for (let i = 1; i <= number; i+=1){
         j = j + i.toString();
         console.log(j);
     }
-
 } else {
-    console.log('Ingrese un numero menor a 50')
+    console.log('Ingrese un numero menor a 50');
 }
