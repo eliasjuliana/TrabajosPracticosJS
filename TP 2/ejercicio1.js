@@ -6,7 +6,7 @@ edad = prompt('Escriba su edad');
 
 if (isNaN(edad)) {
     console.log('El valor ingresado no es un numero valido');
-} else if (!(edad > 18)) {
+} else if (!(edad >= 18)) {
     console.log('Aun no puede conducir');
 } else {
     console.log('Ya esta habilitado para conducir');
