@@ -19,5 +19,25 @@ Output: ‘L’*/
     5. comparar el valor de resto con las letras
     6.devolver el valor de la letra
 */
+const letras = "TRWAGMYFPDXBNJZSQVHLCKET";
 
+while(true){
+    let num  = prompt('Ingrese su numero de documento');
 
+    if(num === null){
+    //cancelar - salir
+    break;
+    }
+    
+    let numInt = Number(num)
+    
+    //verificar rango y que sea un numero
+    if (isNaN(num) || num < 0 || num > 99999999){
+        alert('Ingrese un numero valido');
+        continue;
+    }
+    
+    let resto = numInt % 23; //numero que va desde el 0 al 22(es algo matematico)
+    const letraDNI = letras.charAt(resto);
+    alert(`La letra para el DNI ${num} es ${letraDNI}`);
+}
