@@ -89,7 +89,9 @@ for(let i = 0; i < suma.length; i+=1){
 //         break;
 //     case 11:
 //         apariciones[10] +=1;
-//         break;    
+//         break; 
+//     default:
+//          console.log('Tire los dados nuevamente')
 //     }
 // }
 
