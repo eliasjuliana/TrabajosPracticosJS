@@ -91,7 +91,8 @@ for(let i = 0; i < suma.length; i+=1){
 //         apariciones[10] +=1;
 //         break; 
 //     default:
-//          console.log('Tire los dados nuevamente')
+//          console.log('Tire los dados nuevamente');
+//          break;
 //     }
 // }
 
