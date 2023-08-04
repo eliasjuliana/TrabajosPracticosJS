@@ -61,6 +61,7 @@ for(let i = 0; i<50; i+=1){
 
         if(suma === valoresSuma[j]){
             apariciones[j] = apariciones[j] + 1;
+            break;
         }
     }
 } 
