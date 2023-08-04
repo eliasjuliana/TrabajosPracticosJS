@@ -17,12 +17,17 @@ const perimetro = (a, b) => {
     return(resultado);
 }
 
-const lado1 = Number(prompt('Ingrese un lado del rectangulo'));
-const lado2 = Number(prompt('Ingrese el otro lado del rectangulo'));
+const lado1 = prompt('Ingrese un lado del rectangulo');
+const lado2 = prompt('Ingrese el otro lado del rectangulo');
 
-if(isNaN(lado1) || isNaN(lado2)){
-    alert('Ingrese un numero valido');
+if (lado1 === null || lado2 === null) {
+    console.log('Ingrese un valor');
 } else {
-    perimetro(lado1, lado2);
-    console.log(`El perimetro del rectangulo es ${resultado}`);
+    if(isNaN(lado1) || isNaN(lado2)){
+        alert('Ingrese un numero valido');
+    } else {
+        perimetro(Number(lado1), Number(lado2));
+        console.log(`El perimetro del rectangulo es ${resultado}`);
+    }
 }
+
