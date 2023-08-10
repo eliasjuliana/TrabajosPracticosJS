@@ -16,6 +16,8 @@ export const generateISBN = () => {
   
     return isbn;
   }
-  
-//   const randomISBN = generateISBN();
-//   console.log(randomISBN); // Imprime el ISBN-13 generado aleatoriamente
+
+export const generarTelefono = () => {
+  let telefono = Math.floor(Math.random() * 10e6);
+  return telefono;
+}
