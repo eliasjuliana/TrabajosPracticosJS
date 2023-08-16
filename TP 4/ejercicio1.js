@@ -10,13 +10,16 @@ const auto = {
   color: "gris",
   marca: "Volkswagen",
   modelo: "T-cross",
+  motor: false,
   encender: () => {
-    console.log("auto encendido");
+    this.motor = true;
   },
   apagar: () => {
-    console.log("auto apagado");
+    this.motor = false;
   },
 };
+
+console.log('Estado del auto: '+((auto.motor)?'Encendido':'Apagado'));
 
 console.log(auto);
 console.log(auto.marca);

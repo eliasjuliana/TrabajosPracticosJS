@@ -11,22 +11,68 @@ Utiliza este objeto para mostrar la descripción, ingresar y extraer dinero y vo
 const cuenta = {
   titular: "Alex",
   saldo: 0,
-  ingresar: (cantidad) => {
-    cuenta.saldo = cuenta.saldo + cantidad;
+  ingresar: (dinero) => {
+    console.log(`Usted ingreso $${dinero}`)
+    cuenta.saldo +=dinero;
   },
-  extraer: (cantidad) => {
-    cuenta.saldo = cuenta.saldo - cantidad;
+  extraer: (dinero) => {
+
+    console.log(`Usted extrajo $${dinero}`)
+    cuenta.saldo = cuenta.saldo - dinero;
   },
   informar: () => {
-    console.log(cuenta.saldo);
+    console.log(`El saldo disponible es $${cuenta.saldo}`);
   },
 };
 
-console.log(cuenta);
-console.log(cuenta.titular);
-console.log(cuenta.saldo);
 
-cuenta.ingresar(1000);
-cuenta.informar();
-cuenta.extraer(300);
-cuenta.informar();
+
+while(true){
+  const transaccion = prompt(
+    `1. Ingresar dinero
+     2. Extraer dinero
+     3. Consultar saldo`
+  )
+
+  if(transaccion === null){
+    break;
+  }
+
+  switch(transaccion){
+    case '1': {
+      const dinero = Number(prompt('Monto a ingresar'));
+      if(dinero === null || isNaN(dinero) || dinero < 0){
+        alert('Ingrese un monto valido')
+      } else {
+        cuenta.ingresar(dinero);
+      }
+      break;
+    }
+    case '2': {
+      dinero = Number(prompt('Monto a extraer'));
+      if(dinero === null || isNaN(dinero) || dinero < 0){
+        alert('Ingrese un monto valido')
+      } else{
+        if(cuenta.saldo < dinero){
+          alert ('No tiene dinero suficiente')
+        } else {
+          cuenta.extraer(dinero);
+        }
+      }
+      break;
+    }
+    case '3': {
+      cuenta.informar();
+      break;
+    }
+    default:{
+      alert('Seleccione una transaccion valida')
+      break;
+    }
+  }
+}
+
+
+
+
+
