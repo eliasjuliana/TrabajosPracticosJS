@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;600&display=swap');
+
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Sans Serif';
+}
+
+
+nav {
+    padding: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #6E8387;
+}
+
+nav a{
+    color: #342E37;
+    font-weight: 600;
+}
+
+.container__main{
+    height: 100vh;
+    padding: 6rem;
+    background-color: #6E8387;
+    display: flex;
+    flex-direction: column;
+}
+
+#container__list{
+    padding: 2rem 1rem;
+
+    background-color: #FA824C;
+}
+
+h1{
+    margin-bottom: 2rem;
+    color: #342E37;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+#exercises_list a{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #342E37;
+}
+
+
+/* ___________EJERCICIO 1___________ */
+h2{
+    margin-bottom: 2rem;
+    color: #342E37;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#btn_comenzar{
+    padding: 1rem;
+    width: fit-content;
+    background-color: #FA824C;
+    border-radius: 5px;
+    font-size: 600;
+}
+
+#juego {
+    display: none;
+    
+}
+
+#input-numero-magico{
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#btn-adivinar{
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #342E37;
+    color: #FAFFFD;
+    font-size: 600;
+}
