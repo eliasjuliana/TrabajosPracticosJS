@@ -11,7 +11,7 @@ const juego = document.getElementById('juego');
 
 const mostrarOcultarContenido = () => {
     botonComenzar.style.display = "none";
-    juego.style.display = 'block';
+    juego.style.display = 'flex';
 }
 
 botonComenzar.addEventListener('click', mostrarOcultarContenido);
