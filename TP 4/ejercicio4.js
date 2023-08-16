@@ -28,7 +28,7 @@ carrito.push(producto3);
 console.log(carrito);
 
 
-carrito.forEach( (productos) => {
-    productos.imprimirDatos();
+carrito.forEach( (producto) => {
+    producto.imprimirDatos();
 }
 )
