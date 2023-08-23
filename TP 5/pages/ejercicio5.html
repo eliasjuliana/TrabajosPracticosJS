@@ -9,7 +9,7 @@
     <title>Trabajo Practico 5</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
     <header>
@@ -22,22 +22,19 @@
             <a href="./pages/ejercicio6.html">Ejercicio 6</a>
         </nav>
     </header>
-    <main class="container-fluid" id="container__main">
-        <h1>Trabajo practico n°5</h1>
+    <main class="container-fluid" id="main-ejercicio5">
+        <h1>Cronometro</h1>
 
-        <section class="container__list">
-            <ul id="exercises_list">
-                <li><a href="./pages/ejercicio1.html">Ejercicio 1</a></li>
-                <li><a href="./pages/ejercicio2.html">Ejercicio 2</a></li>
-                <li><a href="./pages/ejercicio3.html">Ejercicio 3</a></li>
-                <li><a href="./pages/ejercicio4.html">Ejercicio 4</a></li>
-                <li><a href="./pages/ejercicio5.html">Ejercicio 5</a></li>
-                <li><a href="./pages/ejercicio6.html">Ejercicio 6</a></li>
-            </ul>
+        <section id="container-cronometro">
+            <div id="reloj"></div>
+            <button class="btn-cronometro" id="btn-iniciar">Iniciar</button>
+            <button class="btn-cronometro" id="btn-pausar">Pausar</button>
+            <button class="btn-cronometro" id="btn-reiniciar">Reiniciar</button>
         </section>
 
     </main>
     <footer></footer>
+    <script src="../js/ejercicio5.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

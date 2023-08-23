@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;600;800&display=swap');
 
 *{
     text-decoration: none;
@@ -21,9 +21,9 @@ nav a{
     font-weight: 600;
 }
 
-.container__main{
+#main_ejercicio1 {
     height: 100vh;
-    padding: 6rem;
+    padding: 5rem;
     background-color: #6E8387;
     display: flex;
     flex-direction: column;
@@ -77,6 +77,84 @@ h2{
 }
 
 #btn-adivinar{
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #342E37;
+    color: #FAFFFD;
+    font-size: 600;
+}
+
+
+/* ___________EJERCICIO 2____________ */
+
+#main_ejercicio2 {
+    height: 100vh;
+    background-color: #6E8387;
+    display: flex;
+    flex-direction: column;
+}
+
+#container_form {
+    background-color:#FA824C;
+    height: 100vh;
+    width: 700px;
+    padding: 1rem 0;
+}
+
+.btn_ejercicio2 {
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #342E37;
+    color: #FAFFFD;
+    font-size: 600;
+}
+
+/* ____________EJERCICIO 4___________ */
+#main-ejercicio4 {
+    height: 100vh;
+    background-color: #6E8387;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-date-hour {
+    background-color: #FA824C;
+    color: #FAFFFD;
+    font-size: 600;
+    width: 200px;
+    height: 50px;
+}
+
+/* __________EJERCICIO 5___________ */
+
+#main-ejercicio5 {
+    height: 100vh;
+    background-color: #6E8387;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-cronometro {
+    background-color: #FA824C;
+    color: #FAFFFD;
+    font-size: 600;
+    width: 300px;
+    height:200px;
+}
+
+#reloj{
+    font-size: 800;
+    font-weight: 600;
+    color: #FAFFFD;
+    padding: 2rem;
+    text-align: center;
+}
+
+.btn-cronometro {
     padding: 1rem;
     border-radius: 5px;
     background-color: #342E37;
