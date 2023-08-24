@@ -83,7 +83,7 @@ const actualizarTemporizador= () => {
 
 const pausarTemporizador = () => {
     clearInterval(temporizador);
-    tiempoRestante = tiempoEnSegundos
+    tiempoRestante = tiempoEnSegundos;
     ocultarBoton(btnPausar);
     mostrarBoton(btnReanudar);
 }

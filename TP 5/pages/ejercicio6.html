@@ -27,9 +27,9 @@
 
         <section id="container-temporizador">
             <article class="d-flex justify-content-center gap-2 p-5">
-                    <input id="input-horas" class="input-tempo" type="number" placeholder="Horas"></input>
-                    <input id="input-min" class="input-tempo" type="number" placeholder="Minutos"></input>
-                    <input id="input-seg" class="input-tempo" type="number" placeholder="Segundos"></input>
+                    <input id="input-horas" class="input-tempo" type="number" placeholder="Horas" min="0" max="24"></input>
+                    <input id="input-min" class="input-tempo" type="number" placeholder="Minutos" min="0" max="59"></input>
+                    <input id="input-seg" class="input-tempo" type="number" placeholder="Segundos" min="0" max="59"></input>
             </article>
 
             <div id="temporizador">00:00:00</div>
