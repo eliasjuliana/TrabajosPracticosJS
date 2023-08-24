@@ -166,3 +166,54 @@ h2{
 .ocultar{
     display: none;
 }
+
+
+/* ____________EJERCICIO 6_______________ */
+
+#main-ejercicio5 {
+    height: 100vh;
+    background-color: #6E8387;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-temporizador {
+    background-color: #FA824C;
+    color: #FAFFFD;
+    font-size: 600;
+    width: 300px;
+    height:200px;
+}
+
+#temporizador{
+    font-size: 800;
+    font-weight: 600;
+    color: #FAFFFD;
+    padding: 2rem;
+    text-align: center;
+}
+
+.input-tempo {
+    width: 50px;
+    height: 40px;
+    background-color: #FAFFFD;
+    border-radius: 2px;
+    border-color: none;
+    color: #FA824C;
+}
+
+.btn-temporizador {
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #342E37;
+    color: #FAFFFD;
+    font-size: 600;
+}
+
+
+.ocultar{
+    display: none;
+}
+
