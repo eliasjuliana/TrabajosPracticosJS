@@ -89,7 +89,23 @@ const pausarTemporizador = () => {
 }
 
 const reanudarTemporizador = () => {
-    iniciarTemporizador(tiempoRestante); // Llama a la función para reanudar el temporizador
+    if (tiempoRestante >= 0) {
+        actualizarTemporizador();
+        temporizador = setInterval(() => {
+            tiempoEnSegundos-=1;
+            if (tiempoEnSegundos < 0) {
+                clearInterval(temporizador);
+                mostrarTemporizador.textContent = 'Tiempo finalizado';
+            } else {
+                actualizarTemporizador();
+            }
+        }, 1000);
+
+        btnIniciar.disabled = true;
+    }
+
+    ocultarBoton(btnIniciar);
+    mostrarBoton(btnPausar);// Llama a la función para reanudar el temporizador
     ocultarBoton(btnIniciar);
     ocultarBoton(btnReanudar);
     mostrarBoton(btnPausar);
