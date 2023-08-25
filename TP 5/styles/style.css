@@ -8,19 +8,58 @@
     font-family: 'Montserrat', 'Sans Serif';
 }
 
+.navbar-bg-color{
+    background-color: #342E37;
+}
 
-nav {
-    padding: 3rem;
+.btn-color{
+    background-color: #FAFFFD;
+}
+#nav-styles {
+    /* padding: 3rem;
     display: flex;
-    justify-content: flex-end;
-    background-color: #6E8387;
+    justify-content: flex-end; */
+    background-color: #342E37;
+    height: 4rem;
+}
+
+#nav-styles a{
+    color: #FAFFFD;
+}
+
+#navbar-btn{
+    color: #FAFFFD;
 }
 
 nav a{
-    color: #342E37;
+    color: #FAFFFD;
     font-weight: 600;
+    text-decoration: none;
 }
 
+#container-main {
+    background-color: #6E8387;
+    height: 100vh;
+}
+
+.btn-ejercicios{
+    width: 8rem;
+    height: 8rem;
+    border-color: #342E37;
+    border-width: 3px ;
+}
+
+.btn-ejercicios a{
+    text-decoration: none;
+    color: #342E37;
+}
+
+/* i{
+    position: absolute;
+} */
+
+
+/* EJERCICIO1*/
 #main_ejercicio1 {
     height: 100vh;
     padding: 5rem;
@@ -29,11 +68,7 @@ nav a{
     flex-direction: column;
 }
 
-#container__list{
-    padding: 2rem 1rem;
 
-    background-color: #FA824C;
-}
 
 h1{
     margin-bottom: 2rem;
@@ -122,9 +157,16 @@ h2{
 .container-date-hour {
     background-color: #FA824C;
     color: #FAFFFD;
-    font-size: 600;
-    width: 200px;
-    height: 50px;
+    width: auto;
+    height: auto;
+}
+
+#date{
+    font-size: 3rem;
+}
+
+#hour{
+    font-size: 3rem;
 }
 
 /* __________EJERCICIO 5___________ */
@@ -142,12 +184,12 @@ h2{
     background-color: #FA824C;
     color: #FAFFFD;
     font-size: 600;
-    width: 300px;
-    height:200px;
+    width: 60%;
+    height:auto;
 }
 
 #reloj{
-    font-size: 800;
+    font-size: 4rem;
     font-weight: 600;
     color: #FAFFFD;
     padding: 2rem;
@@ -183,12 +225,12 @@ h2{
     background-color: #FA824C;
     color: #FAFFFD;
     font-size: 600;
-    width: 300px;
-    height:200px;
+    width: auto;
+    height:auto;
 }
 
 #temporizador{
-    font-size: 800;
+    font-size: 5rem;
     font-weight: 600;
     color: #FAFFFD;
     padding: 2rem;
@@ -196,12 +238,21 @@ h2{
 }
 
 .input-tempo {
-    width: 50px;
-    height: 40px;
+    width: 110px !important;
+    height: 50px;
     background-color: #FAFFFD;
-    border-radius: 2px;
-    border-color: none;
+    border-radius: 5px !important;
+    border-color: #342E37 !important;
     color: #FA824C;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.input-tempo::placeholder{
+    color: #FA824C;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
 }
 
 .btn-temporizador {

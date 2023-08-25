@@ -105,7 +105,7 @@ const reanudarTemporizador = () => {
     }
 
     ocultarBoton(btnIniciar);
-    mostrarBoton(btnPausar);// Llama a la función para reanudar el temporizador
+    mostrarBoton(btnPausar);
     ocultarBoton(btnIniciar);
     ocultarBoton(btnReanudar);
     mostrarBoton(btnPausar);
@@ -115,13 +115,15 @@ const reiniciarTemporizador = () => {
     clearInterval(temporizador);
     tiempoEnSegundos = 0;
 
+    horasInput.value = ('placeholder');
+    minutosInput.value = ('placeholder');
+    segundosInput.value = ('placeholder'); 
+
     document.getElementById('temporizador').innerText = '00:00:00';
     ocultarBoton(btnPausar);
     ocultarBoton(btnReanudar);
     mostrarBoton(btnIniciar);
 }
-
-
 
 
 /**Event listeners */

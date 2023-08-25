@@ -14,7 +14,7 @@ let minutos = 0;
 let segundos = 0;
 let miliseg = 0;
 
-let reloj = `00:00:00.00`;
+let reloj = `00 : 00 : 00. 00`;
 
 let cronometro;
 
@@ -52,7 +52,7 @@ const reiniciarCron = () => {
     minutos = 0;
     segundos = 0;
 
-    document.getElementById('reloj').innerText = '00:00:00.00';
+    document.getElementById('reloj').innerText = '00 : 00 : 00. 00';
 }
 
 //funcion tiempo que va aumentando los segundos, minutos y horas del cronometro
@@ -76,7 +76,7 @@ const tiempo = () => {
     }
 
     //agrego ceros si hace falta
-    const agregarCeros = `${(horas < 10 ? '0' + horas : horas)} : ${(minutos < 10 ? '0' + minutos : minutos)}:${(segundos < 10 ? '0' + segundos : segundos)}.${miliseg.toString().padStart(3, '0')}`;
+    const agregarCeros = `${(horas < 10 ? '0' + horas : horas)} : ${(minutos < 10 ? '0' + minutos : minutos)} : ${(segundos < 10 ? '0' + segundos : segundos)}. ${miliseg.toString().padStart(3, '0')}`;
 
     document.getElementById('reloj').innerText = agregarCeros;
 
@@ -94,29 +94,3 @@ btnPausar.addEventListener('click', pausarCron);
 
 btnReiniciar.addEventListener('click', reiniciarCron);
 
-
-// //iniciar, pausa y reiniciar
-
-// const iniciarCronometro = () =>{
-
-//     setInterval()
-
-//     let horas = '00';
-//     let minutos = '00';
-//     let segundos = '00';
-//     let miliseg = '00';
-
-//     document.getElementById('reloj').innerText = `${horas}:${minutos}:${segundos}:${miliseg}`;
-// }
-
-// const cronometro = setInterval(iniciarCronometro, 1);
-// iniciarCronometro();
-
-// const pausarCronometro = () =>{
-//     clearInterval(cronometro);
-// }
-
-// const reiniciarCronometro = () =>{
-//     const cronometro = setInterval(iniciarCronometro, 1);
-//     mostrarCronometro();
-// }

@@ -13,23 +13,49 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="./pages/ejercicio1.html">Ejercicio 1</a>
-            <a href="./pages/ejercicio2.html">Ejercicio 2</a>
-            <a href="./pages/ejercicio3.html">Ejercicio 3</a>
-            <a href="./pages/ejercicio4.html">Ejercicio 4</a>
-            <a href="./pages/ejercicio5.html">Ejercicio 5</a>
-            <a href="./pages/ejercicio6.html">Ejercicio 6</a>
+        <nav class="navbar navbar-expand-lg" id="nav-styles">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">TP5</a>
+                <button class="navbar-toggler btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-bg-color" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./ejercicio1.html">Ejercicio 1</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./ejercicio2.html">Ejercicio 2</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./ejercicio3.html">Ejercicio 3</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./ejercicio4.html">Ejercicio 4</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Ejercicio 5</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./ejercicio6.html">Ejercicio 6</a>
+                    </li>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="container-fluid" id="main-ejercicio5">
         <h1>Cronometro</h1>
 
-        <section id="container-cronometro">
-            <div id="reloj">00 : 00 : 00.00</div>
-            <button class="btn-cronometro" id="btn-iniciar">Iniciar</button>
-            <button class="btn-cronometro ocultar" id="btn-pausar">Pausar</button>
-            <button class="btn-cronometro" id="btn-reiniciar">Reiniciar</button>
+        <section id="container-cronometro" class="p-3">
+            <p id="reloj">00 : 00 : 00. 000</p>
+            <div class="d-flex justify-content-center gap-3">
+                <button class="btn-cronometro" id="btn-iniciar">Iniciar</button>
+                <button class="btn-cronometro ocultar" id="btn-pausar">Pausar</button>
+                <button class="btn-cronometro" id="btn-reiniciar">Reiniciar</button>
+            </div>
         </section>
 
     </main>
